@@ -3,8 +3,9 @@ package es.juana.recursividad;
 public class Recursividad {
 	
 	public static void main(String[] args) {
+		int num= 111;
 		
-		invertido(12345);
+		System.out.println(esCreciente(0234));
 		
 	}
 	
@@ -73,6 +74,67 @@ public class Recursividad {
 		}
 		
 	}
+	public static void rectangulo() {
+		
+		
+		
+	}
+	
+	public static boolean ordenarAlfabeticamente(String palabra) {
+		
+		
+		
+		int l1=palabra.charAt(0);
+		int l2=palabra.charAt(1);
+			
+		
+		
+		
+		
+	}
+		
+	
+	
+	public static boolean palindromo(String palabra) {
+		
+	}
+	
+	public static String aBinario(int n) {
+		String binario="";
+		
+		if(n>0) {
+		
+			return aBinario(n/2)+n%2;
+			
+		}
+		return binario;
+	}
+	
+	public static boolean esBin(int n) {
+		if(n>0){
+			return n%10==1 || n%10==1 && esBin(n/10);
+			
+		}
+		return n%10==0 || n%10==1;
+	}
+	
+	public static boolean esCreciente(int n) {
+		
+		if(n<9) {
+			return true;
+		}else {
+			return n%10>n/10%10&& esCreciente(n/10);
+		}
+		
+	}
+	public static boolean esDecreciente(int n) {
+		
+		if(n>9){
+			return n%10<n/10%10 && esCreciente(n/10);
+		}
+		return true;
+	}
+	
 	
 }
 
